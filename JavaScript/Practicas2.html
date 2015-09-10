@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Practicas 2</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        
+        <script>
+            
+            var amigos = ["Juanma", "Lucas", "Ivan", "Dani"];
+            
+            // document.write(amigos[0]);
+            // amigos[0] = "Facu"; con esta funcion podemos remplazar un elemento por otro.
+            
+            // si escribimos amigos.lenght vamos a poder saber cuantos elementos tenemos dentro de un arreglo
+            // y se puede utilizar de la siguiente manera.
+            // document.write("Tienes " + amigos.length + " amigos" );
+            amigos[amigos.length]="Fernando"; // de esta forma estamos indicando que el amigo fernando se escribira al finalizar  la lista
+                                               // si bajamos la consola en la pagina web y ponemos la variable AMIGOS nos dira que fernando esta al final.
+            //tambien podes agregar elementos con la formula amigos.push por ej
+            amigos.push("Sofi", "Tuti", "Mili"); // y si actualizamos el navegador esas personas seran agregadas tambien al final de la variable AMIGOS.
+                                               
+           var amigos2 = ["Fede", "Peta", "Alejo"]; 
+           var amigos3 = amigos.concat(amigos2); //de esta forma con amigos.concat estamos concatenando la variable amigos con la variable amigos2
+           //document.write(amigos3);           // y estamos formando una nueva variable amigos 3 para mostrar este resultado.
+                
+           /*document.write*/(amigos3.join(", ")); // .join nos permite configurar nuestro arreglo con espacios o simbolos como , : ; - = etc
+                   
+           var ordenados = amigos3.sort();
+           //document.write(ordenados); // con ste arreglo mostrariamos todos los amigos ordenados alfabeticamente
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+        </script>       
+        
+        
+    </body>
+</html>
