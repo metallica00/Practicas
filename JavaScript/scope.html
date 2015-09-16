@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title> scope </title> 
+    </head>
+
+    <body>
+        <script>
+
+            // SCOPE GLOBAL = podemos acceder a ellas desde cualquier parte del codigo.
+            // SCOPE LOCAL = variables creadas dentro de una funcion, solo pueden ser accedidas desde la funcion o una funcion aniadada.
+            // ( function() {
+            // funcion autoinvocada
+            // }())             
+            var variableGlobal = "esto es una variable global";
+
+            var miFuncion = function () {
+                alert(variableGlobal);
+            }
+
+            miFuncion();
+
+
+            // alert(variableGlobal);variableGlobal
+
+
+
+        </script>
+
+    </body>
